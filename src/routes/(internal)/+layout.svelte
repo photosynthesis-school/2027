@@ -7,10 +7,24 @@
 </script>
 
 <Nav>
-	<NavItem href="{base}/" name="Home" />
-	<NavItem href="{base}/trainers" name="Trainers" />
-	<NavItem href="{base}/info" name="Info" />
-	<NavItem href="{base}/contact" name="Contact" />
+	<NavItem
+		href="{base}/"
+		name="Home" />
+	<NavItem
+		href="{base}/committee"
+		name="Scientific Committee" />
+	<NavItem
+		href="{base}/trainers"
+		name="Trainers" />
+	<NavItem
+		href="{base}/participants"
+		name="Participants" />
+	<NavItem
+		href="{base}/venue"
+		name="Venue" />
+	<NavItem
+		href="{base}/info"
+		name="Info" />
 </Nav>
 
 {@render children()}

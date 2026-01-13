@@ -8,7 +8,6 @@
 	import Bold from '$lib/pico/text/Bold.svelte';
 	import H1 from '$lib/pico/text/H1.svelte';
 	import Text from '$lib/pico/text/Text.svelte';
-
 </script>
 
 <svelte:head>
@@ -28,9 +27,12 @@
 			>📅 Apply now and be part of a new community driving innovation at the
 			intersection of genetics, physiology, and data.</Text> -->
 	</div>
-		<ButtonGroup>
+	<ButtonGroup>
+		<BtnGrp href={resolve('/committee')}>Scientific committee</BtnGrp>
 		<BtnGrp href={resolve('/trainers')}>Trainers</BtnGrp>
-		<BtnGrp href={resolve('/info')}>Info</BtnGrp>
+		<BtnGrp href={resolve('/participants')}>Participants</BtnGrp>
+		<BtnGrp href={resolve('/venue')}>Venue</BtnGrp>
+		<BtnGrp href={resolve('/info')}>General Info</BtnGrp>
 		<!-- <BtnGrp href="https://forms.gle/MXxyyvYGtWpdVGN46">Apply</BtnGrp> -->
 		<BtnGrp
 			disabled
@@ -41,14 +43,4 @@
 <Footer />
 
 <style>
-	img {
-		display: none;
-	}
-	@media (min-width: 64rem) {
-		img {
-			display: block;
-			max-width: 100%;
-			margin: 0 auto 1rem;
-		}
-	}
 </style>

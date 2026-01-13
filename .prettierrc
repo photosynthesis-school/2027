@@ -10,8 +10,7 @@
 	"singleAttributePerLine": true,
 	"experimentalOperatorPosition": "start",
 	"plugins": [
-		"prettier-plugin-svelte",
-		"prettier-plugin-tailwindcss"
+		"prettier-plugin-svelte"
 	],
 	"overrides": [
 		{
