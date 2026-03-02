@@ -33,6 +33,9 @@ const config = {
 			strict: true,
 			fallback: '404.html'
 		})
+	},
+	paths: {
+		base: process.argv.includes('dev') ? '' : '/2027'
 	}
 };
 
