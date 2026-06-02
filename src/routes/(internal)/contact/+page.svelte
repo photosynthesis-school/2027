@@ -1,25 +1,25 @@
 <script>
 	import { base } from '$app/paths';
-	import Header from '$lib/pico/sections/Header.svelte';
-	import Main from '$lib/pico/sections/Main.svelte';
-	import Section from '$lib/pico/sections/Section.svelte';
-	import H1 from '$lib/pico/text/H1.svelte';
-	import H2 from '$lib/pico/text/H2.svelte';
-	import H6 from '$lib/pico/text/H6.svelte';
-	import Text from '$lib/pico/text/Text.svelte';
-	import R2 from '$lib/R2.svelte';
+	import {
+		Grid,
+		H1,
+		H2,
+		H6,
+		Section,
+		SectionHeader,
+		SectionMain,
+		Text
+	} from '@computational-biology-aachen/design';
 </script>
 
-<Header>
-	<H1 color="white">Contact us</H1>
-</Header>
+<SectionHeader>
+	<H1 color="light">Contact us</H1>
+</SectionHeader>
 
-<Main>
-	<Section>
-		<R2>
-			<img
-				src="{base}/people-working.png"
-				alt="people working" />
+<SectionMain align="start">
+	<Section pad="no">
+		<Grid columns={2}>
+			<img class="hide-on-sm" src="{base}/people-working.png" alt="people working" />
 			<div>
 				<H2 color="secondary">You can find us at</H2>
 
@@ -41,16 +41,16 @@
 					(c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.
 				</Text>
 			</div>
-		</R2>
+		</Grid>
 	</Section>
-</Main>
+</SectionMain>
 
 <style>
-	img {
+	.hide-on-sm {
 		display: none;
 	}
 	@media (min-width: 64rem) {
-		img {
+		.hide-on-sm {
 			display: block;
 			max-width: 100%;
 			margin: 0 auto 1rem;

@@ -1,46 +1,85 @@
 <script>
-	import { resolve } from '$app/paths';
-	import BtnGrp from '$lib/BtnGrp.svelte';
-	import ButtonGroup from '$lib/ButtonGroup.svelte';
-	import Footer from '$lib/Footer.svelte';
-	import Hero from '$lib/Hero.svelte';
-	import Section from '$lib/pico/sections/Section.svelte';
-	import Bold from '$lib/pico/text/Bold.svelte';
-	import H1 from '$lib/pico/text/H1.svelte';
-	import Text from '$lib/pico/text/Text.svelte';
+	import { base } from '$app/paths';
+	import {
+		Bold,
+		Button,
+		CollapseToBurger,
+		H1,
+		Hero,
+		Imprint,
+		Navbar,
+		NavItem,
+		Row,
+		Section,
+		Text
+	} from '@computational-biology-aachen/design';
 </script>
 
 <svelte:head>
-	<title>Photosynthesis hackathon</title>
+	<title>2027 Photosynthesis School</title>
 </svelte:head>
 
-<Hero />
-<Section color="white">
-	<div>
-		<H1 color="secondary">Photosynthesis School 2027</H1>
-		<Text>Here we will add some description</Text>
-		<Text><Bold>When?</Bold> ...</Text>
-		<Text><Bold>Where?</Bold> ...</Text>
-		<Text><Bold>Registration opens?</Bold> ...</Text>
-		<Text><Bold>Registration open until?</Bold>...</Text>
-		<!-- <Text
-			>📅 Apply now and be part of a new community driving innovation at the
-			intersection of genetics, physiology, and data.</Text> -->
-	</div>
-	<ButtonGroup>
-		<BtnGrp href={resolve('/committee')}>Scientific committee</BtnGrp>
-		<BtnGrp href={resolve('/trainers')}>Trainers</BtnGrp>
-		<BtnGrp href={resolve('/participants')}>Participants</BtnGrp>
-		<BtnGrp href={resolve('/venue')}>Venue</BtnGrp>
-		<BtnGrp href={resolve('/info')}>General Info</BtnGrp>
-		<!-- <BtnGrp href="https://forms.gle/MXxyyvYGtWpdVGN46">Apply</BtnGrp> -->
-		<BtnGrp
-			disabled
-			href="/">Register</BtnGrp>
-	</ButtonGroup>
+<Navbar>
+	{#snippet brand()}
+		<span class="brand">Photosynthesis School 2027</span>
+	{/snippet}
+	<CollapseToBurger>
+		<NavItem href="{base}/">Home</NavItem>
+		<NavItem href="{base}/committee">Scientific Committee</NavItem>
+		<NavItem href="{base}/trainers">Trainers</NavItem>
+		<NavItem href="{base}/participants">Participants</NavItem>
+		<NavItem href="{base}/venue">Venue</NavItem>
+		<NavItem href="{base}/info">Info</NavItem>
+	</CollapseToBurger>
+</Navbar>
+
+<Hero src="{base}/hero.jpg">
+	<h1 class="hero-title">Photosynthesis School 2027</h1>
+</Hero>
+
+<Section
+	variant="light"
+	width="narrow">
+	<H1 color="primary">Photosynthesis School 2027</H1>
+	<Text>Here we will add some description</Text>
+	<Text><Bold>When?</Bold> ...</Text>
+	<Text><Bold>Where?</Bold> ...</Text>
+	<Text><Bold>Registration opens?</Bold> ...</Text>
+	<Text><Bold>Registration open until?</Bold>...</Text>
+	<Row
+		wrap
+		gap="var(--space-3)">
+		<Button href="{base}/committee">Scientific committee</Button>
+		<Button href="{base}/trainers">Trainers</Button>
+		<Button href="{base}/participants">Participants</Button>
+		<Button href="{base}/venue">Venue</Button>
+		<Button href="{base}/info">General Info</Button>
+		<Button disabled>Register</Button>
+	</Row>
 </Section>
 
-<Footer />
+<Imprint github="https://github.com/photosynthesis-school/2027" />
 
 <style>
+	.brand {
+		color: var(--color-primary);
+		font-weight: 600;
+		font-size: 1rem;
+	}
+
+	.hero-title {
+		color: var(--color-bg);
+		font-family: var(--font-sans);
+		font-weight: 700;
+		font-size: 3rem;
+		padding: 0;
+		margin: 0 0 0.5rem 0;
+		max-width: 30rem;
+	}
+
+	@media (min-width: 64rem) {
+		.hero-title {
+			font-size: 5rem;
+		}
+	}
 </style>

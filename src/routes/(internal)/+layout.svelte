@@ -1,30 +1,30 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import Nav from '$lib/nav/Nav.svelte';
-	import NavItem from '$lib/nav/NavItem.svelte';
+	import { CollapseToBurger, Navbar, NavItem } from '@computational-biology-aachen/design';
 
 	let { children } = $props();
 </script>
 
-<Nav>
-	<NavItem
-		href="{base}/"
-		name="Home" />
-	<NavItem
-		href="{base}/committee"
-		name="Scientific Committee" />
-	<NavItem
-		href="{base}/trainers"
-		name="Trainers" />
-	<NavItem
-		href="{base}/participants"
-		name="Participants" />
-	<NavItem
-		href="{base}/venue"
-		name="Venue" />
-	<NavItem
-		href="{base}/info"
-		name="Info" />
-</Nav>
+<Navbar>
+	{#snippet brand()}
+		<span class="brand">Photosynthesis School 2027</span>
+	{/snippet}
+	<CollapseToBurger>
+		<NavItem href="{base}/">Home</NavItem>
+		<NavItem href="{base}/committee">Scientific Committee</NavItem>
+		<NavItem href="{base}/trainers">Trainers</NavItem>
+		<NavItem href="{base}/participants">Participants</NavItem>
+		<NavItem href="{base}/venue">Venue</NavItem>
+		<NavItem href="{base}/info">Info</NavItem>
+	</CollapseToBurger>
+</Navbar>
 
 {@render children()}
+
+<style>
+	.brand {
+		color: var(--color-primary);
+		font-weight: 600;
+		font-size: 1rem;
+	}
+</style>
