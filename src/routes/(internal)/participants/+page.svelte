@@ -2,6 +2,10 @@
 	import { H1, Section, SectionHeader, SectionMain, Text } from '@computational-biology-aachen/design';
 </script>
 
+<svelte:head>
+	<title>Participants - 2027 Photosynthesis School</title>
+</svelte:head>
+
 <SectionHeader>
 	<H1 color="light">Participants</H1>
 </SectionHeader>

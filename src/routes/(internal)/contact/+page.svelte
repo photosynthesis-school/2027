@@ -12,6 +12,10 @@
 	} from '@computational-biology-aachen/design';
 </script>
 
+<svelte:head>
+	<title>Contact Us - 2027 Photosynthesis School</title>
+</svelte:head>
+
 <SectionHeader>
 	<H1 color="light">Contact us</H1>
 </SectionHeader>

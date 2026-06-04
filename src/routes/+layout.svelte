@@ -7,6 +7,7 @@
 
 <!-- SEO -->
 <svelte:head>
+	<title>2027 Photosynthesis School</title>
 	<meta
 		name="description"
 		content={config.description} />

@@ -10,6 +10,10 @@
 	} from '@computational-biology-aachen/design';
 </script>
 
+<svelte:head>
+	<title>Trainers - 2027 Photosynthesis School</title>
+</svelte:head>
+
 <SectionHeader>
 	<H1 color="light">Trainers</H1>
 </SectionHeader>

@@ -10,6 +10,10 @@
 	} from '@computational-biology-aachen/design';
 </script>
 
+<svelte:head>
+	<title>Scientific Committee - 2027 Photosynthesis School</title>
+</svelte:head>
+
 <SectionHeader>
 	<H1 color="light">Scientific Committee</H1>
 </SectionHeader>
