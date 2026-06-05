@@ -6,7 +6,6 @@
 		CollapseToBurger,
 		H1,
 		Hero,
-		Imprint,
 		Navbar,
 		NavItem,
 		Row,
@@ -57,8 +56,6 @@
 		<Button disabled>Register</Button>
 	</Row>
 </Section>
-
-<Imprint github="https://github.com/photosynthesis-school/2027" />
 
 <style>
 	.brand {

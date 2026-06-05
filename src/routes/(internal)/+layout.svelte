@@ -1,6 +1,11 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { CollapseToBurger, Navbar, NavItem } from '@computational-biology-aachen/design';
+	import {
+		CollapseToBurger,
+		Imprint,
+		Navbar,
+		NavItem
+	} from '@computational-biology-aachen/design';
 
 	let { children } = $props();
 </script>
@@ -20,6 +25,8 @@
 </Navbar>
 
 {@render children()}
+
+<Imprint github="https://github.com/photosynthesis-school/2027" />
 
 <style>
 	.brand {

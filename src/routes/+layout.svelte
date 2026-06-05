@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config';
+	import { Imprint } from '@computational-biology-aachen/design';
 	import '../app.css';
 
 	let { children } = $props();
@@ -29,6 +30,8 @@
 </svelte:head>
 
 {@render children()}
+
+<Imprint github="https://github.com/photosynthesis-school/2027" />
 
 <style>
 	:global(.brand) {
