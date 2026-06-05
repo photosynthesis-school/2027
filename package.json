@@ -25,12 +25,12 @@
 		"globals": "^17.5.0",
 		"mdsvex": "^0.12.7",
 		"prettier": "^3.8.3",
-		"prettier-plugin-svelte": "^4.0.1",
-		"svelte": "^5.55.10",
-		"svelte-check": "^4.4.8",
+		"prettier-plugin-svelte": "^4.1.0",
+		"svelte": "^5.56.1",
+		"svelte-check": "^4.5.0",
 		"typescript": "^6.0.3",
-		"typescript-eslint": "^8.60.0",
-		"vite": "^8.0.14"
+		"typescript-eslint": "^8.60.1",
+		"vite": "^8.0.16"
 	},
 	"dependencies": {
 		"@computational-biology-aachen/design": "github:Computational-Biology-Aachen/design",
