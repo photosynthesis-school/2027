@@ -17,7 +17,7 @@
 		"@eslint/compat": "^2.0.5",
 		"@eslint/js": "^10.0.1",
 		"@sveltejs/adapter-auto": "^7.0.1",
-		"@sveltejs/kit": "^2.59.1",
+		"@sveltejs/kit": "^2.62.0",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"eslint": "^10.2.1",
 		"eslint-config-prettier": "^10.0.1",
@@ -35,6 +35,6 @@
 	"dependencies": {
 		"@computational-biology-aachen/design": "github:Computational-Biology-Aachen/design",
 		"@sveltejs/adapter-static": "^3.0.8",
-		"shiki": "^4.1.0"
+		"shiki": "^4.2.0"
 	}
 }
