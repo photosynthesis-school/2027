@@ -33,6 +33,11 @@ const config = {
       strict: true,
       fallback: "404.html",
     }),
+    version: {
+      // Poll for new deploys so long-lived tabs upgrade proactively instead of
+      // only recovering reactively after a failed navigation.
+      pollInterval: 300_000,
+    },
   },
   paths: {
     base: process.argv.includes("dev") ? "" : "/2027",
