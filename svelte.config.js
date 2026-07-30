@@ -38,9 +38,9 @@ const config = {
       // only recovering reactively after a failed navigation.
       pollInterval: 300_000,
     },
-  },
-  paths: {
-    base: process.argv.includes("dev") ? "" : "/2027",
+    paths: {
+      base: process.argv.includes("dev") ? "" : "/2027",
+    },
   },
 };
 
