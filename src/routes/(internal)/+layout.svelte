@@ -2,7 +2,6 @@
   import { base } from "$app/paths";
   import {
     CollapseToBurger,
-    Imprint,
     Navbar,
     NavItem,
   } from "@computational-biology-aachen/design";
@@ -25,8 +24,6 @@
 </Navbar>
 
 {@render children()}
-
-<Imprint github="https://github.com/photosynthesis-school/2027" />
 
 <style>
   .brand {
