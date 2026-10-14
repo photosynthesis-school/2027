@@ -1,7 +1,7 @@
 <script lang="ts">
   import { beforeNavigate } from "$app/navigation";
   import { updated } from "$app/state";
-  import * as config from "$lib/config";
+  import * as config from "#lib/config.js";
   import { Imprint } from "@computational-biology-aachen/design";
   import "../app.css";
 

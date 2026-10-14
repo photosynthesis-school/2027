@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { asset, resolve } from "$app/paths";
   import {
     Bold,
     Button,
@@ -23,16 +23,16 @@
     <span class="brand">Photosynthesis School 2027</span>
   {/snippet}
   <CollapseToBurger>
-    <NavItem href="{base}/">Home</NavItem>
-    <NavItem href="{base}/committee">Scientific Committee</NavItem>
-    <NavItem href="{base}/trainers">Trainers</NavItem>
-    <NavItem href="{base}/participants">Participants</NavItem>
-    <NavItem href="{base}/venue">Venue</NavItem>
-    <NavItem href="{base}/info">Info</NavItem>
+    <NavItem href={resolve("/")}>Home</NavItem>
+    <NavItem href={resolve("committee")}>Scientific Committee</NavItem>
+    <NavItem href={resolve("trainers")}>Trainers</NavItem>
+    <NavItem href={resolve("participants")}>Participants</NavItem>
+    <NavItem href={resolve("venue")}>Venue</NavItem>
+    <NavItem href={resolve("info")}>Info</NavItem>
   </CollapseToBurger>
 </Navbar>
 
-<Hero src="{base}/hero.jpg">
+<Hero src={asset("hero.jpg")}>
   <h1 class="hero-title">Photosynthesis School 2027</h1>
 </Hero>
 
@@ -50,11 +50,11 @@
     wrap
     gap="var(--space-3)"
   >
-    <Button href="{base}/committee">Scientific committee</Button>
-    <Button href="{base}/trainers">Trainers</Button>
-    <Button href="{base}/participants">Participants</Button>
-    <Button href="{base}/venue">Venue</Button>
-    <Button href="{base}/info">General Info</Button>
+    <Button href={resolve("committee")}>Scientific committee</Button>
+    <Button href={resolve("trainers")}>Trainers</Button>
+    <Button href={resolve("participants")}>Participants</Button>
+    <Button href={resolve("venue")}>Venue</Button>
+    <Button href={resolve("info")}>General Info</Button>
     <Button disabled>Register</Button>
   </Row>
 </Section>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { asset } from "$app/paths";
   import {
     H1,
     H4,
@@ -22,7 +22,7 @@
   <Section pad="no">
     <div class="row">
       <img
-        src="{base}/anna.png"
+        src={asset("anna.png")}
         alt="Prof. Dr. Anna Matuszyńska"
       />
       <div>
@@ -58,7 +58,7 @@
   <Section pad="no">
     <div class="row">
       <img
-        src="{base}/anna.png"
+        src={asset("anna.png")}
         alt="Prof. Dr. Tomas Morosinotto"
       />
       <div>
@@ -78,7 +78,7 @@
   <Section pad="no">
     <div class="row">
       <img
-        src="{base}/anna.png"
+        src={asset("anna.png")}
         alt="Prof. Dr. Tomas Morosinotto"
       />
       <div>
@@ -98,7 +98,7 @@
   <Section pad="no">
     <div class="row">
       <img
-        src="{base}/anna.png"
+        src={asset("anna.png")}
         alt="Prof. Dr. Giorgio Perin"
       />
       <div>
@@ -118,7 +118,7 @@
   <Section pad="no">
     <div class="row">
       <img
-        src="{base}/anna.png"
+        src={asset("anna.png")}
         alt="Prof. Dr. Nicoletta Liguori"
       />
       <div>
@@ -138,7 +138,7 @@
   <Section pad="no">
     <div class="row">
       <img
-        src="{base}/anna.png"
+        src={asset("anna.png")}
         alt="Prof. Dr. Julie Zedler"
       />
       <div>

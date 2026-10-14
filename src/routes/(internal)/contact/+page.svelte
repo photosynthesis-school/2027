@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { asset } from "$app/paths";
   import {
     Grid,
     H1,
@@ -25,7 +25,7 @@
     <Grid columns={2}>
       <img
         class="hide-on-sm"
-        src="{base}/people-working.png"
+        src={asset("people-working.png")}
         alt="people working"
       />
       <div>
