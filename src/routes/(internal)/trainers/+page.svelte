@@ -24,6 +24,8 @@
       <img
         src={asset("anna.png")}
         alt="Prof. Dr. Anna Matuszyńska"
+        width="526"
+        height="656"
       />
       <div>
         <H1 color="primary">Prof. Dr. Anna Matuszyńska</H1>

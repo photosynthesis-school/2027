@@ -24,6 +24,8 @@
       <img
         src={asset("anna.png")}
         alt="Prof. Dr. Anna Matuszyńska"
+        width="526"
+        height="656"
       />
       <div>
         <H1 color="primary">Prof. Dr. Anna Matuszyńska</H1>
@@ -60,6 +62,10 @@
       <img
         src={asset("anna.png")}
         alt="Prof. Dr. Tomas Morosinotto"
+        width="526"
+        height="656"
+        loading="lazy"
+        decoding="async"
       />
       <div>
         <H1 color="primary">Prof. Dr. Tomas Morosinotto</H1>
@@ -80,6 +86,10 @@
       <img
         src={asset("anna.png")}
         alt="Prof. Dr. Tomas Morosinotto"
+        width="526"
+        height="656"
+        loading="lazy"
+        decoding="async"
       />
       <div>
         <H1 color="primary">Prof. Dr. Tomas Morosinotto</H1>
@@ -100,6 +110,10 @@
       <img
         src={asset("anna.png")}
         alt="Prof. Dr. Giorgio Perin"
+        width="526"
+        height="656"
+        loading="lazy"
+        decoding="async"
       />
       <div>
         <H1 color="primary">Prof. Dr. Tomas Morosinotto</H1>
@@ -120,6 +134,10 @@
       <img
         src={asset("anna.png")}
         alt="Prof. Dr. Nicoletta Liguori"
+        width="526"
+        height="656"
+        loading="lazy"
+        decoding="async"
       />
       <div>
         <H1 color="primary">Prof. Dr. Nicoletta Liguori</H1>
@@ -140,6 +158,10 @@
       <img
         src={asset("anna.png")}
         alt="Prof. Dr. Julie Zedler"
+        width="526"
+        height="656"
+        loading="lazy"
+        decoding="async"
       />
       <div>
         <H1 color="primary">Prof. Dr. Julie Zedler</H1>

@@ -26,7 +26,11 @@
       <img
         class="hide-on-sm"
         src={asset("people-working.png")}
-        alt="people working"
+        alt=""
+        width="777"
+        height="943"
+        loading="lazy"
+        decoding="async"
       />
       <div>
         <H2 color="secondary">You can find us at</H2>
